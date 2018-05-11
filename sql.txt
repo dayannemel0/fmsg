@@ -1,0 +1,17 @@
+create database lato_pet
+default character set utf8
+default collate UTF8_GENERAL_CI;
+
+
+create table pet (
+    codigo int auto_increment,
+    nome varchar(100),
+    tipo varchar(100),
+    idade int,
+    peso double,
+    tamanho varchar(50),
+
+    constraint pk_pet primary key(codigo)
+) 
+default character set utf8
+default collate UTF8_GENERAL_CI;
